@@ -1078,7 +1078,7 @@ a:focus {
     max-width: 600px;
     margin: 20px auto;
     padding: 20px;
-    background-color: #ffffff; /* Changed to white for higher contrast */
+    background-color: #ffffff; /* White background */
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -1091,7 +1091,7 @@ a:focus {
     display: block;
     margin-bottom: 5px;
     font-weight: bold;
-    color: #333; /* Darker color for better visibility */
+    color: #333;
 }
 
 .contact-form .form-control {
@@ -1100,8 +1100,8 @@ a:focus {
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
-    color: #333; /* Dark text color for better visibility */
-    background-color: #fff; /* Ensures the input fields have good contrast */
+    color: #333; /* Default text color */
+    background-color: #fff;
 }
 
 .contact-form .form-control:focus {
@@ -1110,6 +1110,13 @@ a:focus {
     box-shadow: 0 0 5px rgba(92, 184, 92, 0.5);
 }
 
+/* Change the color of the email and message fields to red */
+#email,
+#message {
+    color: red; /* Red text color */
+}
+
+/* Button Styling */
 .btn-submit {
     background-color: #5cb85c;
     color: white;
@@ -1118,7 +1125,7 @@ a:focus {
     border-radius: 4px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    font-weight: bold; /* Ensure text is bold and stands out */
+    font-weight: bold;
 }
 
 .btn-submit:hover {
@@ -1131,4 +1138,5 @@ a:focus {
     opacity: 1;
     transition: width 0.6s ease, height 0.6s ease, opacity 0.6s ease;
 }
+
 

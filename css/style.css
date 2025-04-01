@@ -1074,25 +1074,77 @@ a:focus {
     margin-right: 15px;
     font-size: 20px;
 }
-#contact {
-  max-width: 600px;
-  margin: auto;
-  padding: 20px;
-}
+#contact-me {
+        max-width: 600px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #f9f9f9;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
 
-form {
-  display: flex;
-  flex-direction: column;
-}
+    .contact-form .form-group {
+        margin-bottom: 15px;
+    }
 
-input, textarea, button {
-  margin: 10px 0;
-  padding: 10px;
-}
+    .contact-form label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+    }
 
-@media (max-width: 768px) {
-  #contact {
-    padding: 10px;
-  }
-}
+    .contact-form .form-control {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+    .contact-form .form-control:focus {
+        border-color: #5cb85c;
+        outline: none;
+        box-shadow: 0 0 5px rgba(92, 184, 92, 0.5);
+    }
+
+    .btn-submit {
+        background-color: #5cb85c;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .btn-submit:hover {
+        background-color: #4cae4c;
+    }
+
+    /* Animation */
+    .btn-submit {
+        position: relative;
+        overflow: hidden;
+    }
+
+    .btn-submit:after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 5px;
+        height: 5px;
+        background: rgba(255, 255, 255, 0.5);
+        opacity: 0;
+        border-radius: 100%;
+        transform: translate(-50%, -50%) scale(1);
+        transition: width 0.3s ease, height 0.3s ease, opacity 0.3s ease;
+    }
+
+    .btn-submit:focus:not(:active):after {
+        width: 100px;
+        height: 100px;
+        opacity: 1;
+        transition: width 0.6s ease, height 0.6s ease, opacity 0.6s ease;
+    }
 
